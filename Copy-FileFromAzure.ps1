@@ -8,4 +8,3 @@ param (
 $source = $artifactsLocation + "\$folderName\$fileToInstall"
 $dest = "C:\WindowsAzure\$folderName"
 New-Item -Path $dest -ItemType directory
-Invoke-WebRequest $source -OutFile "$dest\$fileToInstall"
